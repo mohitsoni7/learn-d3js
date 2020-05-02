@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <style type="text/css"> 
+        ul {
+          list-style-type: none;
+          margin: 50;
+          padding: 50;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+        }
+
+        li {
+          float: left;
+        }
+
+        li a {
+          display: block;
+          padding: 15px;
+          background-color: #dddddd;
+        }     
+        .page-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<ul class='page-center'>
+    <li> <a href="{% url 'demo:emplist' %}">First</a></li>
+    <li> <a href="{% url 'demo:userlist' %}">Basic Static Chart</a></li>
+    <li> <a href="{% url 'demo:techlist' %}">Basic Shapes</a></li>
+</ul>
+<h2 class='page-center'>Home Page</h2>
+<p class='page-center'>Hi all, this is Mohit Soni and we are making an attempt to learn D3.js. This is javascript library like jqyery and others but is focsed mainly on visualisation.</p>
+</body>
+</html>

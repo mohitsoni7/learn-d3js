@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Create</title>
+</head>
+<body>
+<h2>Employee Create</h2>
+<form method="post" novalidate>{% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Save">
+</form>
+</body>
+</html>

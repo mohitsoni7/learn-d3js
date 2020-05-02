@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Shpaes</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+<h2 style="text-align: center;">Basic Shapes using SVG</h2>
+<ul class='tech-companies'>
+	<li>Rectangle</li>
+		<svg width="400" height="400" style="background: #D3D3D3">
+			<rect x="0" y="0" width="100" height="100" stroke="black" fill="blue" stroke-width="2"/>
+			<rect x="100" y="150" width="200" height="100" stroke="black" fill="blue" stroke-width="2"/>
+			<rect x="300" y="300" width="100" height="100" stroke="black" fill="blue" stroke-width="2" transform="rotate(45, 365,310)"/>
+		</svg>
+	<li>Circle</li>
+		<svg width="400" height="400" style="background: #D3D3D3">
+			<circle cx="200" cy="200" r="150" stroke="black" fill="pink" stroke-width="2"/>
+		</svg>
+	<li>Ellipse</li>
+		<svg width="400" height="400" style="background: #D3D3D3">
+			<ellipse cx="200" cy="200" rx="150" ry="100" stroke="blue" fill="magenta" stroke-width="2"/>
+		</svg>
+	<li>Polygon</li>
+		<svg width="400" height="400" style="background: #D3D3D3">
+			<!-- Triangles -->
+			<polygon points="100,0 0,100 200,100" stroke="purple" fill="lime" stroke-width="2"/>
+			<polygon points="50,0 0,50 100,50" stroke="purple" fill="lime" stroke-width="2"/>
+			<text x="80" y="80" fill="red">Triangle</text>
+			<!-- Right Angle Triangle -->
+			<polygon points="250,0 250,150 400,150" stroke="purple" fill="lime" stroke-width="2"/>
+			<text x="250" y="125" fill="red">Right Angle Triangle</text>
+			<!-- Tetrahedorn using polygon (quadrilateral) and lines -->
+			<polygon points="200,200 125,320 200,350 275,320" stroke="purple" fill="lime" stroke-width="2"/>
+			<line x1="125" y1="320" x2="200" y2="290" stroke="purple" stroke-width="2" stroke-dasharray="5,5"/>
+			<line x1="200" y1="290" x2="275" y2="320" stroke="purple" stroke-width="2" stroke-dasharray="5,5"/>
+			<line x1="200" y1="290" x2="200" y2="200" stroke="purple" stroke-width="2" stroke-dasharray="5,5"/>
+			<text x="160" y="370" fill="red">Tetrahedron</text>
+		</svg>
+</ul>
+</body>
+</html>

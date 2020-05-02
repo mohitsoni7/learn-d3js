@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee List</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+<h2>Employee List</h2>
+<ol class='mylist'>
+{% for emp in employees %}
+<li>{{ emp.user.first_name }} {{ emp.user.last_name }} - <em>{{ emp.codename }}</em> - {{ emp.skill }} - {{ emp.total_experience }}</li>
+{% endfor %}
+</ol>
+<!-- <script type="text/javascript" src="{% static 'd3code/first.js' %}"></script> -->
+<script type="text/javascript" src="{% static 'd3code/basic-static-chart.js' %}"></script>
+<script type="text/javascript" >
+
+
+    
+
+</script>
+</body>
+</html>
